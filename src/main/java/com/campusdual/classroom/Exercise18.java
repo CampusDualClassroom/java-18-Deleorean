@@ -22,8 +22,10 @@ public class Exercise18 {
     }
 
     public static void main(String[] args) {
-        int positions = Utils.integer("Introduce un número: ");
+        /*int positions = Utils.integer("Introduce un número: ");
         int[] miArray = createAndInitializeArray(positions);
-        showInlineArray(miArray);
+        showInlineArray(createAndInitializeArray(positions));*/
+        //Versión refactorizada:
+        showInlineArray(createAndInitializeArray(Utils.integer("Introduce un número: ")));
     }
 }
